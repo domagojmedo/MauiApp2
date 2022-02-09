@@ -9,8 +9,8 @@
 @code {
 	private int currentCount = 0;
 
-	private void IncrementCount()
+	private async Task IncrementCount()
 	{
-		currentCount-=10;
+		var photo = await MediaPicker.CapturePhotoAsync();
 	}
 }
